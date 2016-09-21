@@ -1,0 +1,33 @@
+{
+  "name": "gllacy",
+  "version": "1.0.0",
+  "description": "Gllacy htmlacademy project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafviktor/gllacy-GrafStudy.git"
+  },
+  "keywords": [
+    "gllacy",
+    "htmlacademy"
+  ],
+  "author": "Roman Leonenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grafviktor/gllacy-GrafStudy/issues"
+  },
+  "homepage": "https://github.com/grafviktor/gllacy-GrafStudy#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-less": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9"
+  }
+}
