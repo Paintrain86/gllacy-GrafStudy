@@ -1,0 +1,31 @@
+.gallery
+{
+    position: absolute;
+
+    width: 900px;
+}
+.gallery__button
+{
+    display: none;
+}
+.gallery__button--green:checked ~ .body
+{
+    background: #849d8f url('../img/icecream-bg-1.jpg') no-repeat center;
+}
+.gallery__button--blue:checked ~ .body
+{
+    background: #8996a6 url('../img/icecream-bg-2.jpg') no-repeat center;
+}
+.gallery__button--brown:checked ~ .body
+{
+    background: #9d8b84 url('../img/icecream-bg-3.jpg') no-repeat center;
+}
+.gallery__label
+{
+    cursor: pointer;
+}
+.body
+{
+    width: 100%;
+    min-height: 700px;
+}

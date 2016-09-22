@@ -1,0 +1,19 @@
+.gallery {
+  position: absolute;
+  width: 900px;
+  &__button {
+    display: none;
+    &--green:checked ~ .body {
+      background: @COLOR_BODY-GREEN url("@{IMG_PATH}/icecream-bg-1.jpg") no-repeat center;
+    }
+    &--blue:checked ~ .body {
+      background: @COLOR_BODY-BLUE url("@{IMG_PATH}/icecream-bg-2.jpg") no-repeat center;
+    }
+    &--brown:checked ~ .body {
+      background: @COLOR_BODY-BROWN url("@{IMG_PATH}/icecream-bg-3.jpg") no-repeat center;
+    }
+  }
+  &__label {
+    cursor: pointer;
+  }
+}
