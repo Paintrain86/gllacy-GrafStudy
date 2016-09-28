@@ -1,0 +1,71 @@
+.background__switcher
+{
+    display: none;
+}
+.background__switcher--green:checked ~ .page
+{
+    background: #849d8f url('../img/icecream-bg-1.jpg') no-repeat center top;
+}
+.background__switcher--blue:checked ~ .page
+{
+    background: #8996a6 url('../img/icecream-bg-2.jpg') no-repeat center top;
+}
+.background__switcher--brown:checked ~ .page
+{
+    background: #9d8b84 url('../img/icecream-bg-3.jpg') no-repeat center top;
+}
+.background__switcher--green:checked ~ .page .background__button--green
+{
+    background: white;
+}
+.background__switcher--blue:checked ~ .page .background__button--blue
+{
+    background: white;
+}
+.background__switcher--brown:checked ~ .page .background__button--brown
+{
+    background: white;
+}
+.background__switcher--green:checked ~ .page .background__headline--green
+{
+    display: block;
+}
+.background__switcher--blue:checked ~ .page .background__headline--blue
+{
+    display: block;
+}
+.background__switcher--brown:checked ~ .page .background__headline--brown
+{
+    display: block;
+}
+.background__buttons
+{
+    position: absolute;
+}
+.background__button
+{
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+
+    cursor: pointer;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.background__headline
+{
+    display: none;
+}
+.page
+{
+    width: 100%;
+}
+.container
+{
+    min-width: 900px;
+    max-width: 1200px;
+    padding-right: 2.3%;
+    padding-left: 2.3%;
+}
