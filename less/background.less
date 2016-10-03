@@ -34,16 +34,38 @@
   }
   &__buttons {
     position: absolute;
+    top: 555px;
   }
   &__button {
     display: inline-block;
+
     width: 15px;
     height: 15px;
-    border: 1px solid @COLOR_WHITE;
-    border-radius: 50%;
+
     cursor: pointer;
+
+    border: 1px solid @COLOR_WHITE;
+    // border-radius: 50%;
   }
   &__headline {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+
     display: none;
+
+    width: 680px;
+
+    transform: translateX(-50%);
+    text-align: center;
+
+    color: @COLOR_WHITE;
+
+    font-size: 60px;
+    font-weight: bold;
+  }
+  &__buy-button {
+    font-size: 32px;
+    font-weight: bold;
   }
 }
