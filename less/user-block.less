@@ -1,5 +1,31 @@
 .user-block {
   &__link {
     color: @COLOR_WHITE;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.2);
+    padding-top: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.4em;
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    &--search {
+      background-image: url("@{IMG_PATH}/icon-zoom.svg");
+      background-position: 50% 50%;
+    }
+    &--login {
+      background-image: url("@{IMG_PATH}/icon-login.svg");
+      background-position: 25% 50%;
+      padding-left: 45px;
+      padding-right: 15px;
+    }
+    &--cart {
+      background-image: url("@{IMG_PATH}/icon-cart.svg");
+      background-position: 13% 50%;
+      padding-left: 45px;
+      padding-right: 30px;
+    }
   }
 }

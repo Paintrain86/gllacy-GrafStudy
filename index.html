@@ -6,7 +6,8 @@
   <title>Gllacy shop</title>
   <link rel="stylesheet" href="/css/normalize.min.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -37,9 +38,17 @@
       <header class="header">
         <img class="header__logo" src="./img/logo.png" alt="Лого" />
         <nav class="nav">
-          <a class="nav__link" href="catalog.html">Каталог</a>
+          <a class="nav__link" href="catalog.html">Каталог
+            <ul class="popup-menu catalog-menu">
+              <li class="catalog-menu__item catalog-menu__item--highlighted">Новинки</li>
+              <li class="catalog-menu__item">Сливочное</li>
+              <li class="catalog-menu__item">Щербеты</li>
+              <li class="catalog-menu__item">Фруктовый лед</li>
+              <li class="catalog-menu__item">Мелорин</li>
+            </ul>
+          </a>
           <a class="nav__link" href="#">Доставка и оплата</a>
-          <a class="nav__link" href="#">О компании</a>
+          <a class="nav__link" href="#">О Компании</a>
         </nav>
         <div class="user-block">
           <a class="user-block__link user-block__link--search" href="#"></a>

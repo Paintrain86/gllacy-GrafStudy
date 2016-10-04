@@ -10,16 +10,18 @@ body
     display: inline-block;
 
     box-sizing: border-box;
-    padding-top: .5em;
-    padding-right: 1.5em;
-    padding-bottom: .5em;
-    padding-left: 1.5em;
+    padding-top: .4em;
+    padding-right: 1.3em;
+    padding-bottom: .4em;
+    padding-left: 1.3em;
 
     text-decoration: none;
 
     color: #fff;
     border-radius: 2em;
     background-image: linear-gradient(#f26843, #e54a35);
+    box-shadow: 0 .05em .05em #444;
+    text-shadow: 0 0 .1em #666;
 }
 .background__switcher
 {
@@ -64,26 +66,31 @@ body
 .background__buttons
 {
     position: absolute;
-    top: 555px;
+    top: 562px;
+    left: 26px;
 }
 .background__button
 {
     display: inline-block;
 
-    width: 15px;
-    height: 15px;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 
     cursor: pointer;
 
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 .background__headline
 {
     font-size: 60px;
     font-weight: bold;
+    line-height: 60px;
 
     position: absolute;
-    top: 400px;
+    top: 390px;
     left: 50%;
 
     display: none;
@@ -101,12 +108,24 @@ body
 {
     font-size: 32px;
     font-weight: bold;
+
+    position: absolute;
+    left: 50%;
+
+    margin-top: 542px;
+
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 .container
 {
+    position: relative;
+
     box-sizing: border-box;
     min-width: 900px;
     max-width: 1200px;
+    margin: 0 auto;
     padding-right: 2.3%;
     padding-left: 2.3%;
 }
@@ -116,14 +135,16 @@ body
     display: -ms-flexbox;
     display:         flex;
 
+    padding-top: 7px;
+
     -webkit-align-items: center;
     -ms-flex-align: center;
             align-items: center;
 }
 .header__logo
 {
-    margin-right: 20px;
-    margin-left: 0;
+    margin-right: 29px;
+    margin-left: -9px;
 }
 .nav
 {
@@ -131,14 +152,109 @@ body
 }
 .nav__link
 {
+    font-size: 16px;
+    font-weight: bold;
+
+    position: relative;
+
+    margin-right: 23px;
+
+    text-decoration: none;
+
     color: #fff;
+}
+.nav__link::after
+{
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 100%;
+
+    content: '';
+
+    border-color: rgba(255, 255, 255, .3);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.popup-menu
+{
+    position: absolute;
+
+    border-radius: 5px;
+    background-color: #f8f7f4;
+    box-shadow: 0 15px 30px #222;
+}
+.catalog-menu
+{
+    min-width: 145px;
+    padding: 0;
+
+    list-style: none;
+}
+.catalog-menu__item
+{
+    font-size: 14px;
+    font-weight: lighter;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+
+    color: #232232;
+}
+.catalog-menu__item:hover
+{
+    background-color: rgba(208, 112, 88, .25);
+}
+.catalog-menu__item--highlighted
+{
+    font-weight: bold;
+
+    border-bottom: 1px solid #d1d0ce;
 }
 .user-block__link
 {
+    font-size: 14px;
+
+    margin-left: 10px;
+    padding-top: .4em;
+    padding-right: 1em;
+    padding-bottom: .4em;
+    padding-left: 1em;
+
+    text-decoration: none;
+
     color: #fff;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .2);
+    background-repeat: no-repeat;
+}
+.user-block__link--search
+{
+    background-image: url('../img/icon-zoom.svg');
+    background-position: 50% 50%;
+}
+.user-block__link--login
+{
+    padding-right: 15px;
+    padding-left: 45px;
+
+    background-image: url('../img/icon-login.svg');
+    background-position: 25% 50%;
+}
+.user-block__link--cart
+{
+    padding-right: 30px;
+    padding-left: 45px;
+
+    background-image: url('../img/icon-cart.svg');
+    background-position: 13% 50%;
 }
 .contact-us
 {
+    font-weight: bold;
+
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
@@ -153,4 +269,12 @@ body
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
             align-items: flex-end;
+}
+.contact-us__opening-hours
+{
+    font-size: 14px;
+}
+.contact-us__phone
+{
+    font-size: 22px;
 }

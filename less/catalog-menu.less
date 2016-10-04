@@ -1,0 +1,25 @@
+.catalog-menu {
+  min-width: 145px;
+  list-style: none;
+  padding: 0px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // padding-left: 5px;
+  // padding-right: 5px;
+  &__item {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #232232;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    &:hover {
+      background-color: rgba(208,112,88, 0.25);
+    }
+    &--highlighted {
+      font-weight: bold;
+      // FIXME: Граница активной кнопки должна иметь отступы с обеих сторон.
+      border-bottom: 1px solid #d1d0ce;
+    }
+  }
+}
