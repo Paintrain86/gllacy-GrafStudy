@@ -1,6 +1,21 @@
 .popup-menu {
-  position: absolute;
   border-radius: 5px;
-  background-color: @COLOR_POPUP_MENU;
+  background-color: @COLOR_LIGHT;
   box-shadow: 0 15px 30px #222;
+  &:hover {
+    display: flex;
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 40px;
+    display: none;
+    margin-left: -10px;
+    padding-top: 20px;
+    content: '';
+
+    &:hover {
+      display: flex;
+    }
+  }
 }

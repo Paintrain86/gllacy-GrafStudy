@@ -38,15 +38,16 @@
       <header class="header">
         <img class="header__logo" src="./img/logo.png" alt="Лого" />
         <nav class="nav">
-          <a class="nav__link" href="catalog.html">Каталог
-            <ul class="popup-menu catalog-menu">
-              <li class="catalog-menu__item catalog-menu__item--highlighted">Новинки</li>
-              <li class="catalog-menu__item">Сливочное</li>
-              <li class="catalog-menu__item">Щербеты</li>
-              <li class="catalog-menu__item">Фруктовый лед</li>
-              <li class="catalog-menu__item">Мелорин</li>
-            </ul>
-          </a>
+          <a class="nav__link" href="#catalog.html">Каталог</a>
+          <div class="popup-menu__wrapper">
+            <div class="popup-menu catalog-menu">
+              <a class="catalog-menu__item catalog-menu__item--highlighted" href="catalog.html?new">Новинки</a>
+              <a class="catalog-menu__item" href="catalog.html?type=1">Сливочное</a>
+              <a class="catalog-menu__item" href="catalog.html?type=2">Щербеты</a>
+              <a class="catalog-menu__item" href="catalog.html?type=3">Фруктовый лед</a>
+              <a class="catalog-menu__item" href="catalog.html?type=4">Мелорин</a>
+            </div>
+          </div>
           <a class="nav__link" href="#">Доставка и оплата</a>
           <a class="nav__link" href="#">О Компании</a>
         </nav>
@@ -129,21 +130,16 @@
         </h2>
         <ul class="info__list">
           <li class="info__item info__item--icon-icecream">
-            Все наше мороженое изготавливается на собственном производстве, с использованием
-            современного оборудования и проверенных временем технологий.
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
           <li class="info__item info__item--icon-cow">
-            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
-            с которыми нас связывает долговременное сотрудничество.
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </li>
           <li class="info__item info__item--icon-leaf">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-            качества. Все дополнительные ингредиенты и добавки произведены из натурального,
-            экологически чистого сырья.
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="info__item info__item--icon-therm">
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
         </ul>
       </section>
@@ -157,8 +153,7 @@
         </article>
         <article class="news__item news__item--bg-envelop">
           <div class="news__content">
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-            что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
           </div>
           <form class="news__subscription" action="http://echo.htmlacademy.ru" method="post">
             <input class="news__input" type="email" name="email" placeholder="Электронная почта">
