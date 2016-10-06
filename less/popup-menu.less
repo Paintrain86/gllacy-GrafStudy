@@ -2,20 +2,23 @@
   border-radius: 5px;
   background-color: @COLOR_LIGHT;
   box-shadow: 0 15px 30px #222;
-  &:hover {
-    display: flex;
-  }
 
   &__wrapper {
     position: absolute;
-    top: 40px;
+    top: 50px;
     display: none;
-    margin-left: -10px;
-    padding-top: 20px;
+    padding-top: 10px;
     content: '';
+    // border: 1px solid white;
 
     &:hover {
       display: flex;
+    }
+    &--negative-offset-85 {
+      transform: translateX(-85%);
+    }
+    &--negative-offset-52 {
+      transform: translateX(-52%);
     }
   }
 }

@@ -50,10 +50,28 @@
           </div>
           <a class="nav__link" href="#">Доставка и оплата</a>
           <a class="nav__link" href="#">О Компании</a>
+          <!-- <a class="nav__link" href="#">О Компании</a>
+          <a class="nav__link" href="#">О Компании</a> -->
         </nav>
         <div class="user-block">
           <a class="user-block__link user-block__link--search" href="#"></a>
+          <div class="popup-menu__wrapper popup-menu__wrapper--negative-offset-85">
+            <form class="popup-menu user-block__form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
+              <input class="user-block__input user-block__input-search" type="text" name="keywords" placeholder="Что ищем?">
+            </form>
+          </div>
           <a class="user-block__link user-block__link--login" href="#">Вход</a>
+          <div class="popup-menu__wrapper popup-menu__wrapper--negative-offset-52">
+            <form class="popup-menu user-block__form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
+              <input class="user-block__input" type="text" name="login" placeholder="Электронная почта" required>
+              <input class="user-block__input" type="text" name="password" placeholder="Пароль" required>
+              <button class="button user-block__button" type="submit">Войти</button>
+              <div class="user-block__form-links">
+                <a class="user-block__form-link" href="#forgot_password.html">Забыли пароль?</a>
+                <a class="user-block__form-link" href="#signup.html">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
           <a class="user-block__link user-block__link--cart" href="#">Пусто</a>
         </div>
       </header>
