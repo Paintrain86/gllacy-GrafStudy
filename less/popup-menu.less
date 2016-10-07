@@ -5,7 +5,8 @@
 
   &__wrapper {
     position: absolute;
-    top: 50px;
+    z-index: @POSITION_HIGHER;
+    top: 20px;
     display: none;
     padding-top: 10px;
     content: '';
@@ -14,11 +15,14 @@
     &:hover {
       display: flex;
     }
-    &--negative-offset-85 {
-      transform: translateX(-85%);
+
+    &--negative-offset {
+      right: 0;
     }
-    &--negative-offset-52 {
-      transform: translateX(-52%);
-    }
+  }
+  &__container {
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
   }
 }

@@ -1,14 +1,20 @@
 .nav {
   margin-right: auto;
-  min-width: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 430px;
   &__link {
     position: relative;
     z-index: 1;
 
     // margin-right: 0.7em;
     // margin-left: 0.7em;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin: 4px 14px;
+    // margin-top: 4px;
+    // margin-right: 14px;
+    // margin-top: 4px;
+    // margin-left: 14px;
     text-decoration: none;
     color: @COLOR_WHITE;
     font-size: 16px;
@@ -19,11 +25,7 @@
     }
 
     &:hover {
-      // margin-right: -0.3em;
-      // margin-left: -0.3em;
-      margin-right: 0;
-      margin-left: 0;
-      // padding: 0.4em 1em;
+      margin: -2px;
       padding: 4px 16px;
       color: @COLOR_BLACK;
       border-radius: 50px;
