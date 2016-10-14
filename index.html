@@ -2,58 +2,97 @@
 <html>
 
 <head>
+  <meta charset="utf-8">
   <title>Gllacy shop</title>
-  <link rel="stylesheet" href="/css/normalize.min.css" charset="utf-8">
-  <link rel="stylesheet" href="/css/style.css" charset="utf-8">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-  <input class="background__switcher background__switcher--green" type="radio" name="icecream" id="icecream-1" value="1" checked>
-  <input class="background__switcher background__switcher--blue" type="radio" name="icecream" id="icecream-2" value="2">
-  <input class="background__switcher background__switcher--brown" type="radio" name="icecream" id="icecream-3" value="3">
+  <input class="slider-back__switcher slider-back__switcher--green" type="radio" name="icecream" id="icecream-1" value="1" checked>
+  <input class="slider-back__switcher slider-back__switcher--blue" type="radio" name="icecream" id="icecream-2" value="2">
+  <input class="slider-back__switcher slider-back__switcher--brown" type="radio" name="icecream" id="icecream-3" value="3">
   <div class="page">
     <div class="container">
-
-      <div class="background">
-        <div class="background__headline background__headline--green">
+      <div class="slider-back">
+        <div class="slider-back__headline slider-back__headline--green">
           Крем-брюле и пломбир с малиновым джемом
         </div>
-        <div class="background__headline background__headline--blue">
+        <div class="slider-back__headline slider-back__headline--blue">
           Шоколадный пломбир и лимонный сорбет
         </div>
-        <div class="background__headline background__headline--brown">
+        <div class="slider-back__headline slider-back__headline--brown">
           Пломбир с помадкой и клубничный щербет
         </div>
-        <div class="background__buy-both">
-          <a class="button background__buy-button" href="#add-to-cart.html?current">Давайте оба!</a>
+        <div class="slider-back__buy-both">
+          <a class="button slider-back__buy-button" href="#add-to-cart.html?current">Давайте оба!</a>
         </div>
-        <div class="background__buttons">
-          <label class="background__button background__button--green" for="icecream-1"></label>
-          <label class="background__button background__button--blue" for="icecream-2"></label>
-          <label class="background__button background__button--brown" for="icecream-3"></label>
+        <div class="slider-back__buttons">
+          <label class="slider-back__button slider-back__button--green" for="icecream-1"></label>
+          <label class="slider-back__button slider-back__button--blue" for="icecream-2"></label>
+          <label class="slider-back__button slider-back__button--brown" for="icecream-3"></label>
         </div>
       </div>
       <header class="header">
-        <img class="header__logo" src="./img/logo.png" alt="Лого" />
+        <img class="header__logo" src="img/logo.png" alt="Лого" />
         <nav class="nav">
-          <a class="nav__link" href="catalog.html">Каталог</a>
+          <div class="popup-menu__container">
+            <a class="nav__link" href="#catalog.html">Каталог</a>
+            <div class="popup-menu__wrapper popup-menu__wrapper--negative-offset-65">
+              <div class="popup-menu catalog-menu">
+                <a class="catalog-menu__item catalog-menu__item--highlighted" href="catalog.html?new">Новинки</a>
+                <a class="catalog-menu__item" href="catalog.html?type=1">Сливочное</a>
+                <a class="catalog-menu__item" href="catalog.html?type=2">Щербеты</a>
+                <a class="catalog-menu__item" href="catalog.html?type=3">Фруктовый лед</a>
+                <a class="catalog-menu__item" href="catalog.html?type=4">Мелорин</a>
+              </div>
+            </div>
+          </div>
           <a class="nav__link" href="#">Доставка и оплата</a>
-          <a class="nav__link" href="#">О компании</a>
+          <a class="nav__link" href="#">О Компании</a>
         </nav>
         <div class="user-block">
-          <a class="user-block__link user-block__link--search" href="#"></a>
-          <a class="user-block__link user-block__link--login" href="#">Вход</a>
-          <a class="user-block__link user-block__link--cart" href="#">Пусто</a>
+          <div class="popup-menu__container">
+            <a class="user-block__link user-block__link--search" href="#"></a>
+            <div class="popup-menu__wrapper popup-menu__wrapper--negative-offset">
+              <form class="popup-menu user-block__form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
+                <input class="user-block__input user-block__input-search" type="text" name="keywords" placeholder="Что ищем?">
+              </form>
+            </div>
+          </div>
+          <div class="popup-menu__container">
+            <a class="user-block__link user-block__link--login" href="#">Вход</a>
+            <div class="popup-menu__wrapper popup-menu__wrapper--negative-offset">
+              <form class="popup-menu user-block__form" action="http://echo.htmlacademy.ru" method="post" autocomplete="off">
+                <input class="user-block__input" type="text" name="login" placeholder="Электронная почта" required>
+                <input class="user-block__input" type="text" name="password" placeholder="Пароль" required>
+                <button class="button user-block__button" type="submit">Войти</button>
+                <div class="user-block__form-links">
+                  <a class="user-block__form-link" href="#forgot_password.html">Забыли пароль?</a>
+                  <a class="user-block__form-link" href="#signup.html">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="popup-menu__container">
+            <a class="user-block__link user-block__link--cart" href="#">Пусто</a>
+            <!-- <div class="popup-menu__wrapper popup-menu__wrapper--negative-offset">
+              Here a popup-menu must follow, if the cart isn't empty
+            </div> -->
+            </form>
+          </div>
         </div>
       </header>
 
       <div class="contact-us">
-        <div class="contact-us__opening-hours">
+        <span class="contact-us__opening-hours">
           C 10 до 20, ежедневно
-        </div>
-        <div class="contact-us__phone">
+        </span>
+        <span class="contact-us__phone">
           8 812 450-25-25
-        </div>
+        </span>
       </div>
 
       <section class="promo">
@@ -75,7 +114,7 @@
 
       <section class="catalog">
         <div class="catalog-item catalog-item--hit">
-          <img src="./img/flavor-1.jpg" alt="фото начинки" width="267" height="267" />
+          <img src="img/flavor-1.jpg" alt="фото начинки" width="267" height="267" />
           <div class="catalog-item__price">
             310
           </div>
@@ -84,7 +123,7 @@
           </div>
         </div>
         <div class="catalog-item catalog-item--hit">
-          <img src="./img/flavor-2.jpg" alt="фото начинки" width="267" height="267" />
+          <img src="img/flavor-2.jpg" alt="фото начинки" width="267" height="267" />
           <div class="catalog-item__price">
             380
           </div>
@@ -93,7 +132,7 @@
           </div>
         </div>
         <div class="catalog-item catalog-item--hit">
-          <img src="./img/flavor-3.jpg" alt="фото начинки" width="267" height="267" />
+          <img src="img/flavor-3.jpg" alt="фото начинки" width="267" height="267" />
           <div class="catalog-item__price">
             355
           </div>
@@ -102,7 +141,7 @@
           </div>
         </div>
         <div class="catalog-item catalog-item--hit">
-          <img src="./img/flavor-4.jpg" alt="фото начинки" width="267" height="267" />
+          <img src="img/flavor-4.jpg" alt="фото начинки" width="267" height="267" />
           <div class="catalog-item__price">
             415
           </div>
@@ -119,21 +158,16 @@
         </h2>
         <ul class="info__list">
           <li class="info__item info__item--icon-icecream">
-            Все наше мороженое изготавливается на собственном производстве, с использованием
-            современного оборудования и проверенных временем технологий.
+            Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
           </li>
           <li class="info__item info__item--icon-cow">
-            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
-            с которыми нас связывает долговременное сотрудничество.
+            Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
           </li>
           <li class="info__item info__item--icon-leaf">
-            Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-            качества. Все дополнительные ингредиенты и добавки произведены из натурального,
-            экологически чистого сырья.
+            Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
           </li>
           <li class="info__item info__item--icon-therm">
-            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
           </li>
         </ul>
       </section>
@@ -147,8 +181,7 @@
         </article>
         <article class="news__item news__item--bg-envelop">
           <div class="news__content">
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-            что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
           </div>
           <form class="news__subscription" action="http://echo.htmlacademy.ru" method="post">
             <input class="news__input" type="email" name="email" placeholder="Электронная почта">
@@ -186,14 +219,14 @@
           <a class="socials__link socials__link--icon-fb" href="https://ru-ru.facebook.com/htmlacademy/" target="_blank"></a>
           <a class="socials__link socials__link--icon-vk" href="https://vk.com/htmlacademy" target="_blank"></a>
         </section>
-        <section class="footer__usefull-links">
+        <section class="footer__links">
           <a class="footer__link footer__link--icon-heart" href="/suppliers.html">Для поставщиков</a>
           <a class="footer__link" href="/documents.html">Наши документы</a>
           <a class="footer__link" href="/production.html">О производстве</a>
           <a class="footer__link" href="/standarts.html">Экологические стандарты</a>
         </section>
         <section class="footer__copyright">
-          <img class="footer__copy-logo" src="./img/htmlacademy_logo.png" alt="лого компании htmlacademy" />
+          <img class="footer__copy-logo" src="img/htmlacademy_logo.png" alt="лого компании htmlacademy" />
           <span class="footer__made-by">Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &copy; 2016</span>
         </section>
       </footer>

@@ -1,0 +1,40 @@
+.catalog-menu {
+  display: flex;
+  flex-direction: column;
+  min-width: 145px;
+  &__item {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17px;
+    text-decoration: none;
+    color: #232232;
+    font-size: 14px;
+    font-weight: lighter;
+
+    &--current {
+      background-color: @COLOR_ITEM_CURRENT;
+    }
+
+    &:hover {
+      background-color: fadeout(@COLOR_ITEM_CURRENT, 75%);
+    }
+
+    &:active {
+      background-color: fadeout(@COLOR_ITEM_CURRENT, 25%);
+    }
+
+    &--highlighted {
+      font-weight: bold;
+
+      &::after {
+        position: absolute;
+        top: 35px;
+        left: 10px;
+        width: 88%;
+        content: '';
+        border-bottom: 1px solid #d1d0ce;
+      }
+    }
+  }
+}

@@ -24,7 +24,8 @@ gulp.task('watch-less', function() {
 gulp.task('live-server', function() {
   browser.init({
     server: {
-      baseDir: "./"
+      baseDir: "./",
+      browser: ["firefox", "google-chrome"]
     }
   });
   gulp.watch(['./css/*.css', './*.html']).on("change", browser.reload);

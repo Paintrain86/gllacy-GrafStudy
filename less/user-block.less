@@ -1,0 +1,87 @@
+.user-block {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 270px;
+  &__link {
+    color: @COLOR_WHITE;
+    border-radius: 50px;
+    background-color: fadeout(@COLOR_WHITE, 75%);
+    padding-top: 0.4em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.4em;
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    &:hover {
+      color: @COLOR_BLACK;
+      background-color: @COLOR_WHITE;
+    }
+    &:hover + .popup-menu__wrapper {
+      display: flex;
+    }
+    &--search {
+      background-image: url("@{IMG_PATH}/icon-zoom.svg");
+      background-position: 50% 50%;
+      &:hover {
+        background-image: url("@{IMG_PATH}/icon-zoom_hover.svg");
+      }
+    }
+    &--login {
+      background-image: url("@{IMG_PATH}/icon-login.svg");
+      background-position: 25% 50%;
+      padding-left: 45px;
+      padding-right: 15px;
+      &:hover {
+        background-image: url("@{IMG_PATH}/icon-login_hover.svg");
+      }
+    }
+    &--cart {
+      background-image: url("@{IMG_PATH}/icon-cart.svg");
+      background-position: 13% 50%;
+      padding-left: 45px;
+      padding-right: 30px;
+      &:hover {
+        background-image: url("@{IMG_PATH}/icon-cart_hover.svg");
+      }
+    }
+  }
+  &__form {
+    box-sizing: border-box;
+    padding: 10px 20px;
+    min-width: 280px;
+  }
+  &__input {
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    &:focus {
+      border-color: #d3d3d3;
+    }
+  }
+  &__button {
+    margin-bottom: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    min-width: 100px;
+  }
+  &__form-links {
+    width: 120px;
+    min-height: 60px;
+    margin-left: 10px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  &__form-link {
+    color: #323232;
+    text-decoration: underline;
+    font-size: 13px;
+    line-height: 22px;
+  }
+}

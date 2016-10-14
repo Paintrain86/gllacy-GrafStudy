@@ -1,0 +1,28 @@
+.popup-menu {
+  border-radius: 5px;
+  background-color: @COLOR_LIGHT;
+  box-shadow: 0 15px 30px #222;
+
+  &__wrapper {
+    position: absolute;
+    z-index: @POSITION_HIGHER;
+    top: 20px;
+    display: none;
+    padding-top: 10px;
+    content: '';
+    // border: 1px solid white;
+
+    &:hover {
+      display: flex;
+    }
+
+    &--negative-offset {
+      right: 0;
+    }
+  }
+  &__container {
+    position: relative;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+}

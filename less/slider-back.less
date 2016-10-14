@@ -1,0 +1,81 @@
+.slider-back {
+  &__switcher {
+    display: none;
+    &--green:checked ~ .page {
+      background: @COLOR_BODY-GREEN url("@{IMG_PATH}/icecream-bg-1.jpg") no-repeat center top;
+    }
+    &--blue:checked ~ .page {
+      background: @COLOR_BODY-BLUE url("@{IMG_PATH}/icecream-bg-2.jpg") no-repeat center top;
+    }
+    &--brown:checked ~ .page {
+      background: @COLOR_BODY-BROWN url("@{IMG_PATH}/icecream-bg-3.jpg") no-repeat center top;
+    }
+
+    &--green:checked ~ .page .slider-back__button--green {
+      background: white;
+    }
+    &--blue:checked ~ .page .slider-back__button--blue {
+      background: white;
+    }
+    &--brown:checked ~ .page .slider-back__button--brown {
+      background: white;
+    }
+
+    &--green:checked ~ .page .slider-back__headline--green {
+      display: block;
+    }
+    &--blue:checked ~ .page .slider-back__headline--blue {
+      display: block;
+    }
+    &--brown:checked ~ .page .slider-back__headline--brown {
+      display: block;
+    }
+  }
+  &__buttons {
+    position: absolute;
+    left: 26px;
+    top: 562px;
+  }
+  &__button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+
+    cursor: pointer;
+
+    border: 2px solid @COLOR_WHITE;
+    border-radius: 50%;
+    &:hover {
+      background-color: fadeout(@COLOR_WHITE, 75%);
+    }
+  }
+  &__headline {
+    position: absolute;
+    top: 390px;
+    left: 50%;
+
+    display: none;
+
+    width: 680px;
+
+    transform: translateX(-50%);
+    text-align: center;
+
+    color: @COLOR_WHITE;
+
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+  &__buy-button {
+    position: absolute;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 542px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
