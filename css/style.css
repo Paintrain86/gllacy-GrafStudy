@@ -38,53 +38,53 @@ a:focus
     background-image: linear-gradient(#e54a35, #f26843);
     box-shadow: inset 0 .05em .05em #444;
 }
-.background__switcher
+.slider-back__switcher
 {
     display: none;
 }
-.background__switcher--green:checked ~ .page
+.slider-back__switcher--green:checked ~ .page
 {
     background: #849d8f url('../img/icecream-bg-1.jpg') no-repeat center top;
 }
-.background__switcher--blue:checked ~ .page
+.slider-back__switcher--blue:checked ~ .page
 {
     background: #8996a6 url('../img/icecream-bg-2.jpg') no-repeat center top;
 }
-.background__switcher--brown:checked ~ .page
+.slider-back__switcher--brown:checked ~ .page
 {
     background: #9d8b84 url('../img/icecream-bg-3.jpg') no-repeat center top;
 }
-.background__switcher--green:checked ~ .page .background__button--green
+.slider-back__switcher--green:checked ~ .page .slider-back__button--green
 {
     background: white;
 }
-.background__switcher--blue:checked ~ .page .background__button--blue
+.slider-back__switcher--blue:checked ~ .page .slider-back__button--blue
 {
     background: white;
 }
-.background__switcher--brown:checked ~ .page .background__button--brown
+.slider-back__switcher--brown:checked ~ .page .slider-back__button--brown
 {
     background: white;
 }
-.background__switcher--green:checked ~ .page .background__headline--green
+.slider-back__switcher--green:checked ~ .page .slider-back__headline--green
 {
     display: block;
 }
-.background__switcher--blue:checked ~ .page .background__headline--blue
+.slider-back__switcher--blue:checked ~ .page .slider-back__headline--blue
 {
     display: block;
 }
-.background__switcher--brown:checked ~ .page .background__headline--brown
+.slider-back__switcher--brown:checked ~ .page .slider-back__headline--brown
 {
     display: block;
 }
-.background__buttons
+.slider-back__buttons
 {
     position: absolute;
     top: 562px;
     left: 26px;
 }
-.background__button
+.slider-back__button
 {
     display: inline-block;
 
@@ -98,11 +98,11 @@ a:focus
     border: 2px solid #fff;
     border-radius: 50%;
 }
-.background__button:hover
+.slider-back__button:hover
 {
     background-color: rgba(255, 255, 255, .25);
 }
-.background__headline
+.slider-back__headline
 {
     font-size: 60px;
     font-weight: bold;
@@ -123,7 +123,7 @@ a:focus
 
     color: #fff;
 }
-.background__buy-button
+.slider-back__buy-button
 {
     font-size: 32px;
     font-weight: bold;

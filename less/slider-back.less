@@ -1,10 +1,9 @@
-.background {
+.slider-back {
   &__switcher {
     display: none;
     &--green:checked ~ .page {
       background: @COLOR_BODY-GREEN url("@{IMG_PATH}/icecream-bg-1.jpg") no-repeat center top;
     }
-
     &--blue:checked ~ .page {
       background: @COLOR_BODY-BLUE url("@{IMG_PATH}/icecream-bg-2.jpg") no-repeat center top;
     }
@@ -12,23 +11,23 @@
       background: @COLOR_BODY-BROWN url("@{IMG_PATH}/icecream-bg-3.jpg") no-repeat center top;
     }
 
-    &--green:checked ~ .page .background__button--green {
+    &--green:checked ~ .page .slider-back__button--green {
       background: white;
     }
-    &--blue:checked ~ .page .background__button--blue {
+    &--blue:checked ~ .page .slider-back__button--blue {
       background: white;
     }
-    &--brown:checked ~ .page .background__button--brown {
+    &--brown:checked ~ .page .slider-back__button--brown {
       background: white;
     }
 
-    &--green:checked ~ .page .background__headline--green {
+    &--green:checked ~ .page .slider-back__headline--green {
       display: block;
     }
-    &--blue:checked ~ .page .background__headline--blue {
+    &--blue:checked ~ .page .slider-back__headline--blue {
       display: block;
     }
-    &--brown:checked ~ .page .background__headline--brown {
+    &--brown:checked ~ .page .slider-back__headline--brown {
       display: block;
     }
   }
